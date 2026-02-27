@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BIMBO - Unified Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(90deg, #00d4ff 0%, #00ff88 100%);
+            color: #000;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 3px solid #00ff88;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+
+        .header h1 { font-size: 2.5em; margin-bottom: 5px; }
+        .header p { font-size: 1.1em; font-weight: 500; }
+
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            padding: 20px;
+            background: rgba(15, 20, 35, 0.9);
+            overflow-x: auto;
+            border-bottom: 2px solid #00d4ff;
+        }
+
+        .nav-tab {
+            padding: 12px 25px;
+            background: rgba(20, 25, 40, 0.8);
+            border: 2px solid #00d4ff;
+            color: #00d4ff;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+
+        .nav-tab:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: #00ff88;
+            color: #00ff88;
+        }
+
+        .nav-tab.active {
+            background: linear-gradient(90deg, #00d4ff 0%, #00ff88 100%);
+            color: #000;
+            border-color: #00ff88;
+        }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .tab-content.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(20, 25, 40, 0.95);
+            border: 1px solid #00d4ff;
+            border-radius: 10px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            border-color: #00ff88;
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #00d4ff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .upload-area {
+            border: 3px dashed #00d4ff;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            background: rgba(0, 212, 255, 0.05);
+            transition: all 0.3s;
+        }
+
+        .upload-area:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: #00ff88;
+            color: #00ff88;
+        }
+
+        .upload-area i {
+            font-size: 3em;
+            margin-bottom: 10px;
+            display: block;
+            color: #00d4ff;
+        }
+
+        button {
+            background: linear-gradient(90deg, #00d4ff 0%, #00ff88 100%);
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+        }
+
+        button:active { transform: scale(0.95); }
+
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .results-table th {
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #00d4ff;
+        }
+
+        .results-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+        }
+
+        .results-table tr:hover {
+            background: rgba(0, 212, 255, 0.05);
+        }
+
+        .metric {
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(0, 212, 255, 0.05);
+            border-left: 4px solid #00d4ff;
+            border-radius: 5px;
+        }
+
+        .metric-label { color: #8ba4c7; font-size: 0.9em; }
+        .metric-value { color: #00ff88; font-size: 1.8em; font-weight: bold; }
+
+        .mini-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .mini-stats { grid-template-columns: repeat(2, 1fr); }
+            .grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.8em; }
+        }
+
+        .verdict-badge {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .verdict-probable {
+            background: rgba(255, 100, 100, 0.3);
+            color: #ff6464;
+        }
+
+        .verdict-possible {
+            background: rgba(255, 165, 77, 0.3);
+            color: #ffa94d;
+        }
+
+        .verdict-none {
+            background: rgba(0, 255, 136, 0.3);
+            color: #00ff88;
+        }
+
+        .static-notice {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 8px;
+            padding: 15px 20px;
+            margin: 15px 0;
+            color: #8ba4c7;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>&#127760; BIMBO</h1>
+        <p>Multi-Layer Tor Network Attribution & Analysis Dashboard</p>
+    </div>
+
+    <div class="nav-tabs">
+        <button class="nav-tab active" onclick="switchTab('dashboard')">
+            <i class="fas fa-th-large"></i> Dashboard
+        </button>
+        <button class="nav-tab" onclick="switchTab('upload')">
+            <i class="fas fa-cloud-upload-alt"></i> Upload & Analyze
+        </button>
+        <button class="nav-tab" onclick="switchTab('analysis')">
+            <i class="fas fa-chart-bar"></i> Analysis Results
+        </button>
+        <button class="nav-tab" onclick="switchTab('map')">
+            <i class="fas fa-map"></i> Geographic Map
+        </button>
+        <button class="nav-tab" onclick="switchTab('reports')">
+            <i class="fas fa-file-pdf"></i> Forensic Reports
+        </button>
+        <button class="nav-tab" onclick="switchTab('metrics')">
+            <i class="fas fa-tachometer-alt"></i> Metrics
+        </button>
+    </div>
+
+    <div class="container">
+
+        <!-- DASHBOARD TAB -->
+        <div id="dashboard" class="tab-content active">
+            <div class="card" style="margin-bottom: 20px;">
+                <h2><i class="fas fa-chart-line"></i> System Overview</h2>
+                <div class="mini-stats">
+                    <div class="metric">
+                        <div class="metric-label">Total Analyses</div>
+                        <div class="metric-value">24</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Tor Detected</div>
+                        <div class="metric-value">18</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Avg Confidence</div>
+                        <div class="metric-value">87.3%</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Success Rate</div>
+                        <div class="metric-value">100%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+                    <button onclick="switchTab('upload')" style="width: 100%;">
+                        <i class="fas fa-upload"></i> Upload PCAP File
+                    </button>
+                    <button onclick="switchTab('analysis')" style="width: 100%; margin-top: 10px;">
+                        <i class="fas fa-search"></i> View Results
+                    </button>
+                    <button onclick="switchTab('reports')" style="width: 100%; margin-top: 10px;">
+                        <i class="fas fa-download"></i> Download Reports
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-info-circle"></i> System Status</h2>
+                    <p style="margin: 8px 0;">&#9989; Analysis Engine: <span style="color: #00ff88;">Ready</span></p>
+                    <p style="margin: 8px 0;">&#9989; Database: <span style="color: #00ff88;">Connected</span></p>
+                    <p style="margin: 8px 0;">&#9989; Report Generator: <span style="color: #00ff88;">Active</span></p>
+                    <p style="margin: 8px 0;">&#128202; Last Update: <span>Just now</span></p>
+                    <div class="static-notice" style="margin-top: 15px;">
+                        <i class="fas fa-info-circle"></i> This is the static preview. Run <code style="color: #00d4ff;">run.bat</code> for full functionality.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UPLOAD & ANALYZE TAB -->
+        <div id="upload" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-cloud-upload-alt"></i> Upload & Analyze PCAP Files</h2>
+                <div class="upload-area">
+                    <i class="fas fa-file-upload"></i>
+                    <p style="margin: 10px 0;">Drag & drop PCAP files here or click to select</p>
+                    <small style="color: #8ba4c7;">Max 100MB per file &bull; .pcap or .pcapng</small>
+                </div>
+                <div class="static-notice" style="margin-top: 20px;">
+                    <i class="fas fa-server"></i> PCAP upload requires the local server. Start with <code style="color: #00d4ff;">run.bat</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANALYSIS RESULTS TAB -->
+        <div id="analysis" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-chart-bar"></i> Analysis Results</h2>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Packets</th>
+                            <th>Flows</th>
+                            <th>Tor Indicators</th>
+                            <th>Confidence</th>
+                            <th>Verdict</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>sample_capture.pcap</td>
+                            <td>12,847</td>
+                            <td>342</td>
+                            <td>15</td>
+                            <td>92.4%</td>
+                            <td><span class="verdict-badge verdict-probable">PROBABLE TOR</span></td>
+                        </tr>
+                        <tr>
+                            <td>network_traffic.pcap</td>
+                            <td>8,291</td>
+                            <td>198</td>
+                            <td>3</td>
+                            <td>67.8%</td>
+                            <td><span class="verdict-badge verdict-possible">POSSIBLE TOR</span></td>
+                        </tr>
+                        <tr>
+                            <td>clean_traffic.pcap</td>
+                            <td>5,102</td>
+                            <td>87</td>
+                            <td>0</td>
+                            <td>12.1%</td>
+                            <td><span class="verdict-badge verdict-none">NO TOR</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="static-notice" style="margin-top: 15px;">
+                    <i class="fas fa-info-circle"></i> Showing sample data. Run the local server for live analysis results.
+                </div>
+            </div>
+        </div>
+
+        <!-- MAP TAB -->
+        <div id="map" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-map"></i> Tor Relay Geographic Distribution</h2>
+                <div style="width: 100%; height: 500px; border: 2px solid #00d4ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: rgba(0, 212, 255, 0.05);">
+                    <div style="text-align: center; color: #8ba4c7;">
+                        <i class="fas fa-globe" style="font-size: 4em; color: #00d4ff; margin-bottom: 15px; display: block;"></i>
+                        <p style="font-size: 1.2em; margin-bottom: 10px;">Interactive Map</p>
+                        <p>Run the local server to view the geographic distribution of detected Tor relays</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORENSIC REPORTS TAB -->
+        <div id="reports" class="tab-content">
+            <div class="card">
+                <h2><i class="fas fa-file-pdf"></i> Forensic Reports</h2>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Analysis Date</th>
+                            <th>Confidence</th>
+                            <th>Tor Flows</th>
+                            <th>Verdict</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>sample_capture.pcap</td>
+                            <td>2026-02-27</td>
+                            <td>92.4%</td>
+                            <td>15</td>
+                            <td><span class="verdict-badge verdict-probable">PROBABLE TOR</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="static-notice" style="margin-top: 15px;">
+                    <i class="fas fa-download"></i> Report downloads available on the local server.
+                </div>
+            </div>
+        </div>
+
+        <!-- METRICS TAB -->
+        <div id="metrics" class="tab-content">
+            <div class="grid">
+                <div class="card">
+                    <h2><i class="fas fa-percent"></i> Detection Metrics</h2>
+                    <div class="metric">
+                        <div class="metric-label">True Positive Rate</div>
+                        <div class="metric-value">85.00</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">False Positive Rate</div>
+                        <div class="metric-value">5.00</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Precision</div>
+                        <div class="metric-value">90.00</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2><i class="fas fa-database"></i> Data Statistics</h2>
+                    <div class="metric">
+                        <div class="metric-label">Total PCAP Files</div>
+                        <div class="metric-value">24</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Tor Relays in Database</div>
+                        <div class="metric-value">9,196</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Analysis Speed</div>
+                        <div class="metric-value">2.50 s/file</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(function(t) { t.classList.remove('active'); });
+            document.querySelectorAll('.nav-tab').forEach(function(t) { t.classList.remove('active'); });
+            document.getElementById(tabName).classList.add('active');
+            if (event && event.target) {
+                var btn = event.target.closest('.nav-tab');
+                if (btn) btn.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

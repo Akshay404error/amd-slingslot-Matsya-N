@@ -1,0 +1,1228 @@
+{
+  "filename": "sample_traffic.pcap",
+  "timestamp": "2025-12-22T11:29:28.952249",
+  "total_packets": 100,
+  "ip_packets": 100,
+  "tcp_packets": 75,
+  "flows": [
+    {
+      "src_ip": "192.168.1.123",
+      "dst_ip": "185.220.101.1",
+      "src_port": 60825,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.175",
+      "dst_ip": "185.220.100.1",
+      "src_port": 49270,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.202",
+      "dst_ip": "45.33.32.1",
+      "src_port": 57352,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.189",
+      "dst_ip": "45.33.32.1",
+      "src_port": 58197,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.105",
+      "dst_ip": "185.220.102.1",
+      "src_port": 53488,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.136",
+      "dst_ip": "185.220.102.1",
+      "src_port": 55229,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.244",
+      "dst_ip": "185.220.100.2",
+      "src_port": 49513,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.22",
+      "dst_ip": "185.220.101.1",
+      "src_port": 63405,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.66",
+      "dst_ip": "185.220.100.2",
+      "src_port": 53484,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.24",
+      "dst_ip": "185.220.102.1",
+      "src_port": 60289,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.59",
+      "dst_ip": "185.220.100.2",
+      "src_port": 53016,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.199",
+      "dst_ip": "185.220.100.1",
+      "src_port": 51753,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.232",
+      "dst_ip": "185.220.101.1",
+      "src_port": 61179,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.90",
+      "dst_ip": "185.220.100.1",
+      "src_port": 54333,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.35",
+      "dst_ip": "185.220.100.1",
+      "src_port": 55447,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.47",
+      "dst_ip": "185.220.100.2",
+      "src_port": 63884,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.115",
+      "dst_ip": "185.220.100.1",
+      "src_port": 63845,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.75",
+      "dst_ip": "45.33.32.1",
+      "src_port": 56289,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.141",
+      "dst_ip": "185.220.100.2",
+      "src_port": 61656,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.90",
+      "dst_ip": "185.220.102.1",
+      "src_port": 61581,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.77",
+      "dst_ip": "185.220.100.1",
+      "src_port": 60957,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.233",
+      "dst_ip": "185.220.100.1",
+      "src_port": 61995,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.120",
+      "dst_ip": "45.33.32.1",
+      "src_port": 60920,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.44",
+      "dst_ip": "185.220.100.2",
+      "src_port": 55073,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.159",
+      "dst_ip": "185.220.101.1",
+      "src_port": 50216,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.113",
+      "dst_ip": "185.220.101.1",
+      "src_port": 53282,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.149",
+      "dst_ip": "45.33.32.1",
+      "src_port": 64398,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.65",
+      "dst_ip": "185.220.100.2",
+      "src_port": 62882,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.65",
+      "dst_ip": "45.33.32.1",
+      "src_port": 55382,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.129",
+      "dst_ip": "185.220.102.1",
+      "src_port": 58912,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.227",
+      "dst_ip": "192.168.1.100",
+      "src_port": 54787,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.45",
+      "dst_ip": "208.67.222.222",
+      "src_port": 51993,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.53",
+      "dst_ip": "208.67.222.222",
+      "src_port": 64837,
+      "dst_port": 22,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.246",
+      "dst_ip": "8.8.8.8",
+      "src_port": 49336,
+      "dst_port": 22,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.48",
+      "dst_ip": "10.0.0.5",
+      "src_port": 61864,
+      "dst_port": 22,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.91",
+      "dst_ip": "8.8.8.8",
+      "src_port": 64989,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.30",
+      "dst_ip": "8.8.8.8",
+      "src_port": 61466,
+      "dst_port": 80,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.186",
+      "dst_ip": "192.168.1.100",
+      "src_port": 58633,
+      "dst_port": 53,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.215",
+      "dst_ip": "192.168.1.100",
+      "src_port": 54164,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.31",
+      "dst_ip": "8.8.8.8",
+      "src_port": 62320,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.2",
+      "dst_ip": "8.8.8.8",
+      "src_port": 49404,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.109",
+      "dst_ip": "208.67.222.222",
+      "src_port": 55920,
+      "dst_port": 53,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.23",
+      "dst_ip": "1.1.1.1",
+      "src_port": 53307,
+      "dst_port": 22,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.238",
+      "dst_ip": "192.168.1.100",
+      "src_port": 50104,
+      "dst_port": 443,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.43",
+      "dst_ip": "10.0.0.5",
+      "src_port": 57831,
+      "dst_port": 80,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.29",
+      "dst_ip": "8.8.8.8",
+      "src_port": 58673,
+      "dst_port": 53,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.61",
+      "dst_ip": "10.0.0.5",
+      "src_port": 63723,
+      "dst_port": 80,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.100",
+      "dst_ip": "1.1.1.1",
+      "src_port": 52788,
+      "dst_port": 80,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.223",
+      "dst_ip": "208.67.222.222",
+      "src_port": 57752,
+      "dst_port": 53,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    },
+    {
+      "src_ip": "192.168.1.49",
+      "dst_ip": "208.67.222.222",
+      "src_port": 61772,
+      "dst_port": 22,
+      "packet_count": 1,
+      "size": 54,
+      "flags": [
+        "S"
+      ]
+    }
+  ],
+  "traffic_profile": {},
+  "potential_tor_indicators": [
+    {
+      "flow": "192.168.1.123:60825->185.220.101.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.175:49270->185.220.100.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.202:57352->45.33.32.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.189:58197->45.33.32.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.105:53488->185.220.102.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.136:55229->185.220.102.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.244:49513->185.220.100.2:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.22:63405->185.220.101.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.66:53484->185.220.100.2:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.24:60289->185.220.102.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.59:53016->185.220.100.2:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.199:51753->185.220.100.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.232:61179->185.220.101.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.90:54333->185.220.100.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.35:55447->185.220.100.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.47:63884->185.220.100.2:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.115:63845->185.220.100.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.75:56289->45.33.32.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.141:61656->185.220.100.2:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.90:61581->185.220.102.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.77:60957->185.220.100.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.233:61995->185.220.100.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.120:60920->45.33.32.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.44:55073->185.220.100.2:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.159:50216->185.220.101.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.113:53282->185.220.101.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.149:64398->45.33.32.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.65:62882->185.220.100.2:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.65:55382->45.33.32.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.129:58912->185.220.102.1:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.227:54787->192.168.1.100:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.45:51993->208.67.222.222:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.91:64989->8.8.8.8:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.215:54164->192.168.1.100:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.31:62320->8.8.8.8:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.2:49404->8.8.8.8:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.238:50104->192.168.1.100:443",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "208.67.222.222:443->192.168.1.98:56291",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "45.33.32.1:443->192.168.1.207:56177",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "1.1.1.1:443->192.168.1.209:63250",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.100.1:443->192.168.1.152:54250",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "10.0.0.5:443->192.168.1.97:54213",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "10.0.0.5:443->192.168.1.53:62321",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.100.2:443->192.168.1.67:57666",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.100.1:443->192.168.1.128:57202",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.100.2:443->192.168.1.32:58128",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "1.1.1.1:443->192.168.1.86:53184",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.100.2:443->192.168.1.123:62666",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "10.0.0.5:443->192.168.1.71:50651",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "8.8.8.8:443->192.168.1.37:57769",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.100.1:443->192.168.1.254:62348",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.100:443->192.168.1.153:52019",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "45.33.32.1:443->192.168.1.14:59812",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "208.67.222.222:443->192.168.1.78:50413",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "208.67.222.222:443->192.168.1.173:57270",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.100.1:443->192.168.1.2:57198",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "45.33.32.1:443->192.168.1.190:58854",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.100:443->192.168.1.17:63333",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "1.1.1.1:443->192.168.1.228:54441",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "45.33.32.1:443->192.168.1.127:53493",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "185.220.102.1:443->192.168.1.20:59835",
+      "port": 443,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "192.168.1.100:443->192.168.1.165:54342",
+      "port": 443,
+      "reason": "Common Tor port"
+    }
+  ],
+  "geolocation_data": [
+    {
+      "ip": "185.220.101.1",
+      "latitude": 52.6171,
+      "longitude": 13.1207,
+      "country": "Germany",
+      "city": "Brandenburg",
+      "flow": "192.168.1.123:60825->185.220.101.1:443"
+    },
+    {
+      "ip": "185.220.100.1",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.175:49270->185.220.100.1:443"
+    },
+    {
+      "ip": "45.33.32.1",
+      "latitude": 37.5625,
+      "longitude": -122.0004,
+      "country": "United States",
+      "city": "Fremont",
+      "flow": "192.168.1.202:57352->45.33.32.1:443"
+    },
+    {
+      "ip": "45.33.32.1",
+      "latitude": 37.5625,
+      "longitude": -122.0004,
+      "country": "United States",
+      "city": "Fremont",
+      "flow": "192.168.1.189:58197->45.33.32.1:443"
+    },
+    {
+      "ip": "185.220.102.1",
+      "latitude": 51.059,
+      "longitude": 13.7503,
+      "country": "Germany",
+      "city": "Dresden",
+      "flow": "192.168.1.105:53488->185.220.102.1:443"
+    },
+    {
+      "ip": "185.220.102.1",
+      "latitude": 51.059,
+      "longitude": 13.7503,
+      "country": "Germany",
+      "city": "Dresden",
+      "flow": "192.168.1.136:55229->185.220.102.1:443"
+    },
+    {
+      "ip": "185.220.100.2",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.244:49513->185.220.100.2:443"
+    },
+    {
+      "ip": "185.220.101.1",
+      "latitude": 52.6171,
+      "longitude": 13.1207,
+      "country": "Germany",
+      "city": "Brandenburg",
+      "flow": "192.168.1.22:63405->185.220.101.1:443"
+    },
+    {
+      "ip": "185.220.100.2",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.66:53484->185.220.100.2:443"
+    },
+    {
+      "ip": "185.220.102.1",
+      "latitude": 51.059,
+      "longitude": 13.7503,
+      "country": "Germany",
+      "city": "Dresden",
+      "flow": "192.168.1.24:60289->185.220.102.1:443"
+    },
+    {
+      "ip": "185.220.100.2",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.59:53016->185.220.100.2:443"
+    },
+    {
+      "ip": "185.220.100.1",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.199:51753->185.220.100.1:443"
+    },
+    {
+      "ip": "185.220.101.1",
+      "latitude": 52.6171,
+      "longitude": 13.1207,
+      "country": "Germany",
+      "city": "Brandenburg",
+      "flow": "192.168.1.232:61179->185.220.101.1:443"
+    },
+    {
+      "ip": "185.220.100.1",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.90:54333->185.220.100.1:443"
+    },
+    {
+      "ip": "185.220.100.1",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.35:55447->185.220.100.1:443"
+    },
+    {
+      "ip": "185.220.100.2",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.47:63884->185.220.100.2:443"
+    },
+    {
+      "ip": "185.220.100.1",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.115:63845->185.220.100.1:443"
+    },
+    {
+      "ip": "45.33.32.1",
+      "latitude": 37.5625,
+      "longitude": -122.0004,
+      "country": "United States",
+      "city": "Fremont",
+      "flow": "192.168.1.75:56289->45.33.32.1:443"
+    },
+    {
+      "ip": "185.220.100.2",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.141:61656->185.220.100.2:443"
+    },
+    {
+      "ip": "185.220.102.1",
+      "latitude": 51.059,
+      "longitude": 13.7503,
+      "country": "Germany",
+      "city": "Dresden",
+      "flow": "192.168.1.90:61581->185.220.102.1:443"
+    },
+    {
+      "ip": "185.220.100.1",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.77:60957->185.220.100.1:443"
+    },
+    {
+      "ip": "185.220.100.1",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.233:61995->185.220.100.1:443"
+    },
+    {
+      "ip": "45.33.32.1",
+      "latitude": 37.5625,
+      "longitude": -122.0004,
+      "country": "United States",
+      "city": "Fremont",
+      "flow": "192.168.1.120:60920->45.33.32.1:443"
+    },
+    {
+      "ip": "185.220.100.2",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.44:55073->185.220.100.2:443"
+    },
+    {
+      "ip": "185.220.101.1",
+      "latitude": 52.6171,
+      "longitude": 13.1207,
+      "country": "Germany",
+      "city": "Brandenburg",
+      "flow": "192.168.1.159:50216->185.220.101.1:443"
+    },
+    {
+      "ip": "185.220.101.1",
+      "latitude": 52.6171,
+      "longitude": 13.1207,
+      "country": "Germany",
+      "city": "Brandenburg",
+      "flow": "192.168.1.113:53282->185.220.101.1:443"
+    },
+    {
+      "ip": "45.33.32.1",
+      "latitude": 37.5625,
+      "longitude": -122.0004,
+      "country": "United States",
+      "city": "Fremont",
+      "flow": "192.168.1.149:64398->45.33.32.1:443"
+    },
+    {
+      "ip": "185.220.100.2",
+      "latitude": 50.0263,
+      "longitude": 10.5157,
+      "country": "Germany",
+      "city": "Ha\u00dffurt",
+      "flow": "192.168.1.65:62882->185.220.100.2:443"
+    },
+    {
+      "ip": "45.33.32.1",
+      "latitude": 37.5625,
+      "longitude": -122.0004,
+      "country": "United States",
+      "city": "Fremont",
+      "flow": "192.168.1.65:55382->45.33.32.1:443"
+    },
+    {
+      "ip": "185.220.102.1",
+      "latitude": 51.059,
+      "longitude": 13.7503,
+      "country": "Germany",
+      "city": "Dresden",
+      "flow": "192.168.1.129:58912->185.220.102.1:443"
+    },
+    {
+      "ip": "208.67.222.222",
+      "latitude": 37.7642,
+      "longitude": -122.3993,
+      "country": "United States",
+      "city": "San Francisco",
+      "flow": "192.168.1.45:51993->208.67.222.222:443"
+    },
+    {
+      "ip": "208.67.222.222",
+      "latitude": 37.7642,
+      "longitude": -122.3993,
+      "country": "United States",
+      "city": "San Francisco",
+      "flow": "192.168.1.53:64837->208.67.222.222:22"
+    },
+    {
+      "ip": "8.8.8.8",
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "country": "United States",
+      "city": "Ashburn",
+      "flow": "192.168.1.246:49336->8.8.8.8:22"
+    },
+    {
+      "ip": "8.8.8.8",
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "country": "United States",
+      "city": "Ashburn",
+      "flow": "192.168.1.91:64989->8.8.8.8:443"
+    },
+    {
+      "ip": "8.8.8.8",
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "country": "United States",
+      "city": "Ashburn",
+      "flow": "192.168.1.30:61466->8.8.8.8:80"
+    },
+    {
+      "ip": "8.8.8.8",
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "country": "United States",
+      "city": "Ashburn",
+      "flow": "192.168.1.31:62320->8.8.8.8:443"
+    },
+    {
+      "ip": "8.8.8.8",
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "country": "United States",
+      "city": "Ashburn",
+      "flow": "192.168.1.2:49404->8.8.8.8:443"
+    },
+    {
+      "ip": "208.67.222.222",
+      "latitude": 37.7642,
+      "longitude": -122.3993,
+      "country": "United States",
+      "city": "San Francisco",
+      "flow": "192.168.1.109:55920->208.67.222.222:53"
+    },
+    {
+      "ip": "1.1.1.1",
+      "latitude": 22.3193,
+      "longitude": 114.1693,
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "flow": "192.168.1.23:53307->1.1.1.1:22"
+    },
+    {
+      "ip": "8.8.8.8",
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "country": "United States",
+      "city": "Ashburn",
+      "flow": "192.168.1.29:58673->8.8.8.8:53"
+    },
+    {
+      "ip": "1.1.1.1",
+      "latitude": 22.3193,
+      "longitude": 114.1693,
+      "country": "Hong Kong",
+      "city": "Hong Kong",
+      "flow": "192.168.1.100:52788->1.1.1.1:80"
+    },
+    {
+      "ip": "208.67.222.222",
+      "latitude": 37.7642,
+      "longitude": -122.3993,
+      "country": "United States",
+      "city": "San Francisco",
+      "flow": "192.168.1.223:57752->208.67.222.222:53"
+    },
+    {
+      "ip": "208.67.222.222",
+      "latitude": 37.7642,
+      "longitude": -122.3993,
+      "country": "United States",
+      "city": "San Francisco",
+      "flow": "192.168.1.49:61772->208.67.222.222:22"
+    }
+  ],
+  "tcp_flows": 50,
+  "potential_tor_flows": 62,
+  "confidence_average": 0.85,
+  "tor_ports_detected": [
+    443,
+    8080,
+    8118,
+    9001,
+    9030
+  ]
+}

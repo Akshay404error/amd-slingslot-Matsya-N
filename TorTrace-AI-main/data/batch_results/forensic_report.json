@@ -1,0 +1,67 @@
+{
+  "report_id": "BIMBO-20260227085727",
+  "generated_at": "2026-02-27T08:57:27.021899",
+  "case_info": {
+    "case_id": "CASE-2025-001",
+    "evidence_source": "PCAP Capture - Network Forensics",
+    "investigator": "BIMBO System",
+    "investigation_date": "2026-02-27T08:57:27.021899"
+  },
+  "network_trace": [],
+  "identified_nodes": [
+    {
+      "timestamp": "2026-02-27T08:57:27.021899",
+      "relay_nickname": "guard-relay-1",
+      "ip_address": "203.45.67.89",
+      "confidence": 0.945,
+      "detection_method": "GNN + Timing Correlation",
+      "location": "United States",
+      "bandwidth": "5.0 Mbps",
+      "pcap_file": "capture_20251221_001.pcap"
+    },
+    {
+      "timestamp": "2026-02-27T08:57:27.021899",
+      "relay_nickname": "guard-relay-2",
+      "ip_address": "192.168.45.123",
+      "confidence": 0.872,
+      "detection_method": "Website Fingerprinting (CNN-LSTM)",
+      "location": "Germany",
+      "bandwidth": "3.5 Mbps",
+      "pcap_file": "capture_20251221_001.pcap"
+    },
+    {
+      "timestamp": "2026-02-27T08:57:27.021899",
+      "relay_nickname": "guard-relay-3",
+      "ip_address": "10.20.30.40",
+      "confidence": 0.756,
+      "detection_method": "Statistical Timing Correlation",
+      "location": "Netherlands",
+      "bandwidth": "4.2 Mbps",
+      "pcap_file": "capture_20251221_001.pcap"
+    }
+  ],
+  "activity_flow": [
+    {
+      "timestamp": "2026-02-27T08:57:27.021899",
+      "type": "Guard Node Identified",
+      "pcap_file": "capture_20251221_001.pcap",
+      "description": "Detected guard-relay-1 via GNN + Timing Correlation",
+      "confidence": 0.945
+    },
+    {
+      "timestamp": "2026-02-27T08:57:27.021899",
+      "type": "Guard Node Identified",
+      "pcap_file": "capture_20251221_001.pcap",
+      "description": "Detected guard-relay-2 via Website Fingerprinting (CNN-LSTM)",
+      "confidence": 0.872
+    },
+    {
+      "timestamp": "2026-02-27T08:57:27.021899",
+      "type": "Guard Node Identified",
+      "pcap_file": "capture_20251221_001.pcap",
+      "description": "Detected guard-relay-3 via Statistical Timing Correlation",
+      "confidence": 0.756
+    }
+  ],
+  "conclusions": []
+}

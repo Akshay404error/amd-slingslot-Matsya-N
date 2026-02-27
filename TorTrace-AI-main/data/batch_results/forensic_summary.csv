@@ -1,0 +1,4 @@
+timestamp,pcap_file,relay_nickname,ip_address,confidence,detection_method,location,bandwidth
+2026-02-27T08:57:27.021899,capture_20251221_001.pcap,guard-relay-1,203.45.67.89,0.945,GNN + Timing Correlation,United States,5.0 Mbps
+2026-02-27T08:57:27.021899,capture_20251221_001.pcap,guard-relay-2,192.168.45.123,0.872,Website Fingerprinting (CNN-LSTM),Germany,3.5 Mbps
+2026-02-27T08:57:27.021899,capture_20251221_001.pcap,guard-relay-3,10.20.30.40,0.756,Statistical Timing Correlation,Netherlands,4.2 Mbps

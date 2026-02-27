@@ -1,0 +1,95 @@
+{
+  "filename": "sample.pcap",
+  "timestamp": "2026-02-27T09:08:41.039640",
+  "total_packets": 28,
+  "ip_packets": 28,
+  "tcp_packets": 28,
+  "flows": [
+    {
+      "src_ip": "83.217.9.73",
+      "dst_ip": "172.21.245.0",
+      "src_port": 9001,
+      "dst_port": 58722,
+      "packet_count": 14,
+      "size": 2616,
+      "flags": [
+        "PA",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "A",
+        "PA",
+        "A",
+        "A",
+        "PA",
+        "A",
+        "A",
+        "A"
+      ]
+    },
+    {
+      "src_ip": "172.21.245.0",
+      "dst_ip": "83.217.9.73",
+      "src_port": 58722,
+      "dst_port": 9001,
+      "packet_count": 14,
+      "size": 6904,
+      "flags": [
+        "A",
+        "PA",
+        "PA",
+        "PA",
+        "PA",
+        "PA",
+        "PA",
+        "PA",
+        "A",
+        "PA",
+        "A",
+        "PA",
+        "PA",
+        "PA"
+      ]
+    }
+  ],
+  "traffic_profile": {},
+  "potential_tor_indicators": [
+    {
+      "flow": "83.217.9.73:9001->172.21.245.0:58722",
+      "port": 9001,
+      "reason": "Common Tor port"
+    },
+    {
+      "flow": "172.21.245.0:58722->83.217.9.73:9001",
+      "port": 9001,
+      "reason": "Common Tor port"
+    },
+    {
+      "indicator": "High TCP ratio",
+      "confidence": 0.65,
+      "reason": "Tor typically uses TCP connections"
+    }
+  ],
+  "geolocation_data": [
+    {
+      "ip": "83.217.9.73",
+      "latitude": 41.0019,
+      "longitude": 28.9645,
+      "country": "T\u00fcrkiye",
+      "city": "Istanbul",
+      "flow": "172.21.245.0:58722->83.217.9.73:9001"
+    }
+  ],
+  "tcp_flows": 2,
+  "potential_tor_flows": 2,
+  "confidence_average": 0.85,
+  "tor_ports_detected": [
+    443,
+    8080,
+    8118,
+    9001,
+    9030
+  ]
+}

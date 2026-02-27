@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-12-22T07:41:31.310169",
+  "topology": {
+    "total_relays": 7,
+    "guard_nodes": 3,
+    "middle_nodes": 2,
+    "exit_nodes": 2,
+    "total_bandwidth": 26700000
+  },
+  "sample_correlation": {
+    "entry_node": "guard-relay-1",
+    "exit_node": "exit-relay-2",
+    "correlation_score": 0.6813,
+    "timing_variance": 0.1199
+  },
+  "method": "Timing-based node correlation with traffic pattern analysis"
+}

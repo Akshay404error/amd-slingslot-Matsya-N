@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install -r requirements.txt)",
+      "Bash(pip install flask flask-cors scapy scikit-learn networkx numpy pandas scipy matplotlib plotly reportlab aiohttp requests pillow folium)",
+      "Bash(pip install torch --index-url https://download.pytorch.org/whl/cpu)",
+      "Bash(python demo_prototype.py)",
+      "Bash(python -c \"import sqlite3; conn = sqlite3.connect\\(''data/tor_relays.db''\\); cursor = conn.cursor\\(\\); cursor.execute\\(''PRAGMA table_info\\(relays\\)''\\); print\\([row for row in cursor.fetchall\\(\\)]\\); conn.close\\(\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python demo_prototype.py)",
+      "Bash(while read f)",
+      "Bash(do sed -i 's/BIMBO/BIMBO/g; s/Bimbo/Bimbo/g; s/bimbo/bimbo/g' \"$f\")",
+      "Bash(done)",
+      "Bash(curl -s http://localhost:5000/batch_upload)",
+      "Bash(curl -s -F \"files=@c:/AMD slingslot/TorTrace-AI-main/data/pcap_files/sample.pcap\" http://localhost:5000/batch_upload)",
+      "Bash(taskkill //F //IM python.exe)",
+      "Bash(curl -s http://localhost:5000/)",
+      "Bash(curl -s -F \"files=@c:/AMD slingslot/TorTrace-AI-main/data/pcap_files/sample.pcap\" http://localhost:5000/upload)",
+      "Bash(npx netlify-cli --version)",
+      "Bash(npx netlify-cli deploy --dir=public --prod --site bimbo-tor-trace)",
+      "Bash(npx netlify-cli sites:create --disable-linking --name bimbo-network-attribution 2)",
+      "Bash(npx netlify-cli deploy --dir=public --prod)",
+      "Bash(ls -la \"c:/AMD slingslot/TorTrace-AI-main\"/*.py)",
+      "Read(//c/AMD slingslot/TorTrace-AI-main/**)",
+      "Bash(ls *.csv *.json)"
+    ]
+  }
+}

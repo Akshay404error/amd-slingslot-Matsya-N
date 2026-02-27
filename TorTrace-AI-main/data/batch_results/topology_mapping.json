@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-02-27T08:57:27.018899",
+  "topology": {
+    "total_relays": 100,
+    "guard_nodes": 0,
+    "middle_nodes": 100,
+    "exit_nodes": 0,
+    "total_bandwidth": 2448753
+  },
+  "sample_correlation": {
+    "entry_node": "seele",
+    "exit_node": "mindbyte",
+    "correlation_score": 0.6674,
+    "timing_variance": 0.1033
+  },
+  "method": "Timing-based node correlation with traffic pattern analysis"
+}
